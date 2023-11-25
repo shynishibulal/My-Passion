@@ -196,25 +196,7 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-  <script>
-	$("#submit-form").submit((e)=>{
-		e.preventDefault()
-		$.ajax({
-			url:"https://script.google.com/macros/s/AKfycbzMUI0eJWntd4HUI5xTVYMDCF3-LI4_y8OpNhR0yMHX7GTZ7Ss9vGJYyzAQSHQ2VSa_nw/exec",
-			data:$("#submit-form").serialize(),
-			method:"post",
-			success:function (response){
-				alert("Form submitted successfully")
-				window.location.reload()
-				//window.location.href="https://google.com"
-			},
-			error:function (err){
-				alert("Something Error")
-
-			}
-		})
-	})
-</script>
+ 
     
   </body>
 </html>
